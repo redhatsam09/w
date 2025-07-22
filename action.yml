@@ -1,0 +1,22 @@
+name: 'Positive PR Emoji Checker'
+description: 'Refuses to deploy if your team hasn't merged a PR with a positive emoji in the title that week'
+author: 'redhatsam09Hackathon'
+inputs:
+  github-token:
+    description: 'GitHub token for API access'
+    required: true
+    default: ${{ github.token }}
+  days:
+    description: 'Number of days to look back for merged PRs'
+    required: false
+    default: '7'
+  bypass-mode:
+    description: 'Set to "true" to show what would happen but not fail the workflow'
+    required: false
+    default: 'false'
+runs:
+  using: 'node20'
+  main: 'index.js'
+branding:
+  icon: 'smile'
+  color: 'green'
