@@ -1,0 +1,22 @@
+{
+  "name": "positive-pr-emoji-checker",
+  "version": "1.0.0",
+  "description": "GitHub Action that refuses to deploy if your team hasn't merged a PR with a positive emoji in the title that week",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "emoji",
+    "pull-request",
+    "deployment"
+  ],
+  "author": "redhatsam09Hackathon",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  }
+}
